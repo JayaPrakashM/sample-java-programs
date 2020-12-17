@@ -15,7 +15,13 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Free Trial(2404743b-5b16-467d-a336-ff72f26847cc)'
     appType: 'functionAppLinux'
-    WebAppName: 'Sample-Java-Application'
+    WebAppName: 
+    ResourceGroupName: 'Jayaprakash_group'
+    RuntimeStackFunction: 'DOCKER|microsoft/azure-functions-node8:2.0'
+    enableCustomDeployment: true
+    DeploymentType: 'runFromZip'
+    enableXmlTransform: true
+    enableXmlVariableSubstitution: true
     deployToSlotOrASE: true
     SlotName: 'production'
 - task: Maven@3
