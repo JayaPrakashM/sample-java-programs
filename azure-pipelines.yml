@@ -10,6 +10,14 @@ pool:
   vmImage: 'Jayaprakash'
 
 steps:
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(2404743b-5b16-467d-a336-ff72f26847cc)'
+    appType: 'functionAppLinux'
+    WebAppName: 'Sample-java-application'
+    deployToSlotOrASE: true
+    SlotName: 'production'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
