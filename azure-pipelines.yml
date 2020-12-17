@@ -15,7 +15,7 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Free Trial(2404743b-5b16-467d-a336-ff72f26847cc)'
     appType: 'functionAppLinux'
-    WebAppName: 'Sample-java-application'
+    WebAppName: 'Sample-Java-Application'
     deployToSlotOrASE: true
     SlotName: 'production'
 - task: Maven@3
