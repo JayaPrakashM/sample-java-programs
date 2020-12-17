@@ -19,7 +19,7 @@ steps:
     ResourceGroupName: 'Jayaprakash_group'
     RuntimeStackFunction: 'DOCKER|microsoft/azure-functions-node8:2.0'
     enableCustomDeployment: true
-    DeploymentType: 'runFromZip'
+    DeploymentType: 'webDeploy'
     enableXmlTransform: true
     enableXmlVariableSubstitution: true
     deployToSlotOrASE: true
